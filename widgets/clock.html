@@ -1,0 +1,28 @@
+<div draggable id="clock-1"
+  ng-show="dc.clock.visible"
+  class="myclock"
+  style="cursor:move; top: {{dc.clock.posy}}px; left: {{dc.clock.posx}}px">
+
+    <div class="clockContainer">
+      <div class="clock">
+          <div class="hour">
+            <div class="hr" style="transform: rotateZ({{dc.clock.hr}}deg)" id="hr">
+            </div>
+          </div>
+          <div class="min">
+              <div class="mn" style="transform: rotateZ({{dc.clock.mm}}deg)" id="mn">
+              </div>
+          </div>
+          <div class="sec">
+              <div class="sc" style="transform: rotateZ({{dc.clock.ss}}deg)" id="sc">
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <br>
+    <div style="display: none">
+      {{ dc.clock.time | date:'HH:mm:ss'}}
+    </div>
+
+</div>

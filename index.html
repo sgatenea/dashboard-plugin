@@ -1,0 +1,40 @@
+<html ng-app="dashboard">
+
+    <head>
+      <link rel="stylesheet" type="text/css" href="./styles/index.css">
+      <link rel="stylesheet" type="text/css" href="./styles/sticky.css">
+      <link rel="stylesheet" type="text/css" href="./styles/calculator.css">
+      <link rel="stylesheet" type="text/css" href="./styles/clock.css">
+      <script src="./scripts/sticky.js"> </script>
+      <script src="./scripts/calculator.js"> </script>
+      <script src="./scripts/clock.js"> </script>
+      <script src="./scripts/angular.min.js"> </script>
+      <script src="./scripts/dashboard.js"> </script>
+      <script src="./scripts/drag.js"> </script>
+    </head>
+
+	<body ng-controller="dashctrl as dc">
+
+        <div ng-include="'widgets/sticky.html'"></div>
+        <div ng-include="'widgets/calculator.html'"></div>
+        <div ng-include="'widgets/clock.html'"></div>
+
+        <div class="menu">
+          <div ng-show="dc.showMenu" class="menuContent">
+            <button ng-click="dc.newSticky()"> New Sticky </button>
+            <button ng-click="dc.calc.toggle()"> Show calc </button>
+            <button ng-click="dc.clock.toggle()"> Show clock </button>
+          </div>
+          <button class="addButton" ng-click="dc.showMenu = !dc.showMenu;">+</button>
+        </div>
+
+        <div class="license">
+          Develop by Sigma Atenea.
+          Background <a href="http://www.freepik.com" target="_blanck">
+            Designed by Freepik
+          </a>
+        </div>
+
+	</body>
+
+</html>

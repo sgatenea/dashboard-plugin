@@ -1,0 +1,6 @@
+<div id="sticky-{{st.id}}" draggable style="cursor:move; top: {{st.posy}}px; left: {{st.posx}}px" class="stickyParent" ng-repeat="st in dc.sticky track by $index">
+  <div class="stickyTool">
+    <button ng-click="dc.deleteSticky(st.id)" class="closeStickyButton"> x </button>
+  </div>
+  <textarea class="sticky" ng-model="st.txt" ng-change='st.save()'></textarea>
+</div>

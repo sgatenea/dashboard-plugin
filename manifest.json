@@ -1,0 +1,38 @@
+{
+  "manifest_version":2,
+  "name":"Dashboard",
+  "version":"0.1",
+  "description":"Quick dashboard for browser",
+  "incognito": "spanning",
+  "icons":{
+    "16":"img/dashboard.jpg",
+    "128":"img/dashboard.jpg"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'", 
+  "background": {
+    "scripts": [
+      "handler.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "unlimitedStorage",
+    "<all_urls>",
+    "downloads",
+    "clipboardRead",
+    "webRequest"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "img/dashboard.jpg",
+      "38": "img/dashboard.jpg"
+    },
+    "default_title": "Dashboard"
+  },
+  "applications": {
+    "gecko": {
+      "id": "christian.a.herlein@gmail.com"
+    }
+  }
+}

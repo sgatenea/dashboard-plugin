@@ -1,0 +1,28 @@
+<div draggable id="calc-1" ng-show="dc.calc.visible" style="cursor:move; top: {{dc.calc.posy}}px; left: {{dc.calc.posx}}px" class="calculator">
+  <input type="text" class="calculator-screen" ng-model="dc.calc.displayValue" disabled />
+  <div class="calculator-keys">
+    <button type="button" ng-click="dc.calc.handleOperator('+')" class="calc-button operator" value="+">+</button>
+    <button type="button" ng-click="dc.calc.handleOperator('-')" class="calc-button operator" value="-">-</button>
+    <button type="button" ng-click="dc.calc.handleOperator('*')" class="calc-button operator" value="*">&times;</button>
+    <button type="button" ng-click="dc.calc.handleOperator('/')" class="calc-button operator" value="/">&divide;</button>
+
+    <button type="button" ng-click="dc.calc.inputDigit('7')" class="calc-button">7</button>
+    <button type="button" ng-click="dc.calc.inputDigit('8')" class="calc-button">8</button>
+    <button type="button" ng-click="dc.calc.inputDigit('9')" class="calc-button">9</button>
+
+    <button type="button" ng-click="dc.calc.inputDigit('4')" class="calc-button">4</button>
+    <button type="button" ng-click="dc.calc.inputDigit('5')" class="calc-button">5</button>
+    <button type="button" ng-click="dc.calc.inputDigit('6')" class="calc-button">6</button>
+
+    <button type="button" ng-click="dc.calc.inputDigit('1')" class="calc-button">1</button>
+    <button type="button" ng-click="dc.calc.inputDigit('2')" class="calc-button">2</button>
+    <button type="button" ng-click="dc.calc.inputDigit('3')" class="calc-button">3</button>
+
+    <button type="button" ng-click="dc.calc.inputDigit('0')" class="calc-button">0</button>
+    <button type="button" ng-click="dc.calc.inputDecimal('.')" class="calc-button decimal">.</button>
+    <button type="button" ng-click="dc.calc.reset()" class="calc-button">AC</button>
+
+    <button type="button" ng-click="dc.calc.handleOperator('=')" class="equal-sign operator" value="=">=</button>
+
+  </div>
+</div>

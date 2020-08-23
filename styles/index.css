@@ -1,0 +1,42 @@
+body {
+  background-image: url('../img/2551167.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.addButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.menuContent {
+  display: inline-grid;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: -100px;
+}
+
+.menu {
+  display: inline-block;
+  margin: 4px 2px;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+}
+
+.license {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
